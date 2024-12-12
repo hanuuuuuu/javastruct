@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Reset styles */
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: grey;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Center the video container */
+    .video-container {
+        width: 80vw; 
+        height: 40vw;
+        max-width: 1500px;
+        max-height: 1000px;
+        position: relative;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        overflow: hidden; 
+    }
+
+    /* Make the iframe responsive */
+    .video-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+</style>
+<body>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=FYoP1uLTLbE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
